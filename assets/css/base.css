@@ -70,6 +70,7 @@ body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640
 .fixed-bottom{margin-bottom: 52px}
 .white-bg{background: #fff;}
 .gray-bg{background: #545454;}
+.zhongjiang-bg{background: #fff0eb;}
 
 .item-box{background: #fff;}
 .padding-box{padding: 20px 10px; margin-top: 10px;}
@@ -97,7 +98,7 @@ body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640
 .ui-qiandao .con{font-size: 13px; color: #a1a1a1; line-height: 20px;}
 .ui-qiandao .go-game{width: 130px; display: inline-block;height: 130px; background: #ff7c4e; border-radius: 50%;margin: 20px auto; line-height: 128px;}
 .ui-qiandao .go-game i{color: #fff; font-size: 110px;}
-.showClose .ui-dialog-close{display: block !important; color: #fff;font-size: 20px; background: #ff7c4e;border-radius: 50%; padding: 5px;right: -10px; top: -10px;-webkit-box-shadow:0 0 1px #666;height: 20px;line-height: 21px; width: 20px; }
+.showClose .ui-dialog-close{display: block !important; color: #fff;font-size: 20px; background: #bbb;border-radius: 50%; padding: 5px;right: -10px; top: -10px;-webkit-box-shadow:0 0 1px #666;height: 20px;line-height: 21px; width: 20px; }
 .weui_cells_title + .weui_cells {margin-top: 0;}
 .weui_cells { margin-top: 10px;background-color: #FFFFFF;line-height: 1.41176471;overflow: hidden;position: relative; font-size: 15px;}
 .weui_cells .weui_cell:first-child{border-top: 1px solid #eeeeee;}
@@ -192,3 +193,25 @@ img{width: 100%;}
 .schedule .padding-box label i{font-size: 30px; position: absolute; top: 0px; right: 8px; display: none;}
 .schedule .weui-check:checked + a div,.schedule .weui-check:checked + a i{color:#5e89fd;display: block; }
 .schedule .weui-check:checked + a{border-color:#5e89fd;}
+
+
+.ml-main { width:100%;height: 100%; max-width: 640px; margin: 0 auto; /*background: url(../assets/images/cj_bg_2.jpg) center ; background-size: 100% 100%;*/position:absolute;overflow:hidden;*zoom:1; z-index:1;left:center;top:0;}
+.ml-main .keTitle{width:45%;height:auto;margin:0 auto;}
+.ml-main .keTitle .title{width:100%;height:auto;margin:15% auto;}
+.ml-main .keTitle .xian{width:100%;height:auto;}
+.ml-main .kePublic{width:80%;height:auto;position:absolute;top:100px;left:10%;}
+/* 大转盘样式 */
+.banner{margin:0 auto}
+.banner .turnplate{display:block;width:100%;height:0;padding-bottom:100%;overflow:hidden;position:relative;}
+.banner .turnplate canvas.item{width:100%;}
+.banner .turnplate #tupBtn{position:absolute;width:27.5%;height:33.5%;left:36%;top:30.5%;border:0;background:none;}
+.banner .turnplate img{width:100%;height:auto;}
+.silider-txt{width:60%;height:30px;line-height: 30px; margin:25px auto;background:rgba(255,255,255,.7);border-radius:15px;text-align: center;}
+.silider-txt p{width:100%;text-align:center;color:#545454;line-height:20px;}
+.activitygame .h2,.activitygame .p2,.activitygame .p3{width:100%;text-align:center;}
+.activitygame .h2{color:#ff7c4e;margin-top:20px;margin-bottom:5px;font-size: 25px;}
+.activitygame .p2{color:#999;font-size:16px;}
+.activitygame .p3{color:#999}
+.ui-choujiang .tit{font-size: 25px;}
+.ui-choujiang .con{font-size: 16px; color: #545454; margin-bottom: 30px;}
+.ui-choujiang .btn{width: 100%;padding: 10px;margin: 0 -10px -10px -10px; border-radius: 0; height: 32px;line-height: 32px;background: rgba(0,0,0,0);color: #5e89fd;border-top: 1px solid #eee;}

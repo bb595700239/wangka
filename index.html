@@ -33,8 +33,8 @@
 	        <a id="signIn"><div class="con"><i class="icon-liwu red"></i>签到有礼</div></a>
 	        <a href="share.html"><div class="con"><i class="icon-haoyou blue"></i>邀请好友</div></a>
 	        <a href="gamesList.html"><div class="con"><i class="icon-saishi yellow"></i>热门赛事</div></a>
-	        <a href="schedule"><div class="con"><i class="icon-dingzuo purple"></i>抢先订座</div></a>
-	        <a href="#"  id="recharge"><div class="con"><i class="icon-choujiang orange"></i>手气抽奖</div></a>
+	        <a href="schedule.html"><div class="con"><i class="icon-dingzuo purple"></i>抢先订座</div></a>
+	        <a href="activityGame.html" id="recharge"><div class="con"><i class="icon-choujiang orange"></i>手气抽奖</div></a>
 	    </div>
 	    <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -89,12 +89,7 @@
 					<div class="con">签到规则<br/>第1天获5积分，第2天获10积分，<br/>第3天及以后获20积分；中断重新开始。</div>
 					<div class="go-game"><i class="icon-choujiang"></i></div>
 					<div class="info">花积分，抽奖赢好礼，点击参与</div>
-					`,[],function(type){
-				    if(type=="yes"){
-				    }else if(type=="no"){
-				        this.hide();  
-				    }
-				},{className:'ui-qiandao showClose ui-alert',width:'270px'});
+					`,[],null,{className:'ui-qiandao showClose ui-alert',width:'270px'});
 				$.alert('今日已签到,明天再接再厉')
 			})
     	})
