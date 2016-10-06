@@ -29,7 +29,7 @@
 <body class="white-bg">
 	<div class="fixed-bottom index">
 		<div class="nav-list flex-box">
-	        <a id="recharge" href="#"><i class="icon-chongzhi green"></i>优充值</a>
+	        <a id="recharge" href="#"><i class="icon-chongzhi green"></i>优惠充值</a>
 	        <a id="signIn" href="#"><i class="icon-liwu red"></i>签到有礼</a>
 	        <a href="#"><i class="icon-haoyou blue"></i>邀请好友</a>
 	    </div>
@@ -80,6 +80,7 @@
     		$('#recharge').click(function(){
 				$.confirm('<div class="con">本操作需要<br />绑定您的上网卡号哦！</div>',[{no:"取消"},{yes:"去绑卡"}],function(type){
 				    if(type=="yes"){
+				    	window.location.href='bindCard.html'
 				    }else if(type=="no"){
 				        this.hide();  
 				    }

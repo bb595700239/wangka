@@ -176,11 +176,11 @@ var  rule={
 						mess=data.message;
                         $('#getcodeJs img').trigger('click');
                     }
-                    $.alert(mess,null,null,1200,{className:'favorpop'},false);
+                    $.alert(mess);
                 }
             },
             error:function(){
-                $.alert("系统繁忙，请稍后再试",null,null,1200,{className:'favorpop'},false);
+                $.alert("系统繁忙，请稍后再试");
                 removeDis();
             }
         });
@@ -189,7 +189,7 @@ var  rule={
     erroralert:function(obj,text) {
         obj.data('group-state',false);
 
-        $.alert(text,null,null,1200,{className:'favorpop'},false);
+        $.alert(text);
     },
     success:function(obj) {
         obj.data('group-state',true);
@@ -263,6 +263,14 @@ var  rule={
             this.success(obj);
         }
     },
+    bankcard:function(obj){//银行卡校验
+        var myReg= /^(\d{16}|\d{19}|\d{18})$/;
+        if(!myReg.test( obj.val().replace(/\s+/g,"") )){
+            this.erroralert(obj,'银行卡格式不正确')
+        }else{
+            this.success(obj);
+        }
+    },
     idcard:function(obj) {//身份证号校验
         var myReg = /^(^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$)|(^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[Xx])$)$/;
         if (!myReg.test(obj.val())) {
@@ -315,13 +323,13 @@ var getcode={//获取手机验证码
                 data:{phone:phone},
                 success: function(data) {
                     if (data.message == 'success') {
-                        $.alert('短信发送成功',null,null,1200,{className:'favorpop'},false);        
+                        $.alert('短信发送成功');        
                     }else{
-                        $.alert('短信发送失败',null,null,1200,{className:'favorpop'},false);  
+                        $.alert('短信发送失败');  
                     }
                 },
                 error: function(){
-                    $.alert('网络连接失败',null,null,1200,{className:'favorpop'},false);
+                    $.alert('网络连接失败');
                 }
             });
         }     
