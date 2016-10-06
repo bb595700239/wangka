@@ -106,6 +106,7 @@ body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640
 .weui_cell_primary {/*color: #333;*/font-size: 15px;text-align: right;}
 .weui_cell_primary input{text-align: right;}
 .weui_input {width: 100%;border: 0;outline: 0;-webkit-appearance: none;background-color: transparent;font-size: inherit;color: inherit;height: 1.41176471em;line-height: 1.41176471; color: #333; margin: 0;padding: 0;}
+.weui_input[type="date"]{width: auto;}
 
 .weui_cells_title {margin-top: 10px;margin-bottom: 10px;padding-left: 15px;padding-right: 15px;color: #b5b5b5;font-size: 14px;}
 .weui_select {-webkit-appearance: none;border: 0;outline: 0;background-color: transparent;width: 100%;font-size: inherit;    height: 1.41176471em;
@@ -188,6 +189,6 @@ img{width: 100%;}
 .schedule .padding-box label{ margin-bottom: 10px;}
 .schedule .padding-box label a{  color: #a1a1a1;height: 40px; line-height: 40px;overflow: hidden;border-radius: 5px;padding: 0 10px;border:1px solid #e4e4e4;display: block;width: 100%;position: relative;padding-right: 45px;}
 .schedule .padding-box label .name{-webkit-box-flex: 1;}
-.schedule .padding-box label i{font-size: 30px; position: absolute; top: 0px; right: 8px;}
-.schedule .weui-check:checked + a div,.schedule .weui-check:checked + a i{color:#5e89fd; }
+.schedule .padding-box label i{font-size: 30px; position: absolute; top: 0px; right: 8px; display: none;}
+.schedule .weui-check:checked + a div,.schedule .weui-check:checked + a i{color:#5e89fd;display: block; }
 .schedule .weui-check:checked + a{border-color:#5e89fd;}
