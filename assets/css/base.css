@@ -109,6 +109,7 @@ body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640
 .weui_select {-webkit-appearance: none;border: 0;outline: 0;background-color: transparent;width: 100%;font-size: inherit;    height: 1.41176471em;
     line-height: 1.41176471;position: relative;z-index: 1;position: relative;}
 .weui_cell .l-icon{font-size: 20px; margin-right: 5px; }
+.weui_cell .r-icon{font-size: 20px; margin-left: 5px; }
 .weui_cell .r-con{position: relative;color: #999;font-size: 13px;height: 18px;display: block;line-height: 18px;}
 .weui_cell .close{color: #a1a1a1;font-size:22px;}
 .weui_cell_bd{-webkit-box-flex: 1;-webkit-flex: 1; flex: 1;}
@@ -130,10 +131,10 @@ img{width: 100%;}
 .my-account .user-info{position: absolute; bottom: 35px; left: 20px;}
 .user-info .user-photo{width: 60px; height: 60px; border-radius: 50%;overflow: hidden;}
 .user-info .name{position: relative;top: 7px;margin-left: 10px; display: block;}
-.gamecenter .rule{padding:10px;}
-.gamecenter .rule .tit{margin-top: 3px;margin-bottom: 10px;}
-.gamecenter .rule .con{color: #a1a1a1;line-height: 1.8;}
-.gamecenter .rule .con p{text-indent: 2em;}
+.rule{padding:10px;}
+.rule .tit{margin-top: 3px;margin-bottom: 10px;}
+.rule .con{color: #a1a1a1;line-height: 1.8;}
+.rule .con p{text-indent: 2em;}
 .fix-bottom-btn{background: #5e89fd; border-top: none; text-align: center;color: #fff !important;display: block;line-height:35px;font-size: 18px;}
 .ui-qiandao .join{width: 80px; height: 80px; border-radius: 50%;color: #fff;line-height: 80px;margin: 0 auto; display: block;}
 .ui-qiandao .onejoin,.ui-qiandao .teamjoin{margin-top: 20px; margin-bottom: 20px;}
@@ -144,3 +145,12 @@ img{width: 100%;}
 .gamesteamjoin .btn-add i{font-size: 20px; margin-right: 5px;position: relative;top: 2px;}
 .share .flex-box{padding: 0 2%; margin-top: 20px;}
 .share .flex-box div{-webkit-box-flex: 1; width: 100%; margin: 0 8%;}
+.wangkacenter .rule .con{padding: 10px 0;}
+
+.wangkalist .weui_cell{padding: 15px 10px;}
+.wangkalist .weui_cell img{width: 60px; height: 60px; border-radius: 5px;}
+.wangkalist .weui_cell .weui_cell_bd{margin-left: 10px;overflow: hidden;}
+.wangkalist .weui_cell .weui_cell_bd p{ width: 100%;text-overflow: ellipsis;white-space: nowrap;overflow: hidden; }
+.wangkalist .weui_cell .weui_cell_bd p.p1{font-size: 18px;}
+.wangkalist .weui_cell .weui_cell_bd p.p2{color: #a1a1a1;}
+.wangkalist .weui_cell i{font-size: 30px; margin-right: 5px}
