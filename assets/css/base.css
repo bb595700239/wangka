@@ -142,3 +142,5 @@ img{width: 100%;}
 .ui-qiandao .teamjoin .join{background: #ff7c4e;}
 .gamesteamjoin .btn-add{margin: 20px 10px 10px 10px;background: #fff; color:#5e89fd; border:1px dotted #5e89fd;vertical-align: top;}
 .gamesteamjoin .btn-add i{font-size: 20px; margin-right: 5px;position: relative;top: 2px;}
+.share .flex-box{padding: 0 2%; margin-top: 20px;}
+.share .flex-box div{-webkit-box-flex: 1; width: 100%; margin: 0 8%;}
