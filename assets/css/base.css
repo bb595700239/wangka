@@ -19,9 +19,7 @@ body,button input,select,textarea{font:12px/1.5 sans-serif}
 img,fieldset{border:0 none}ul,li{list-style:none}
 img{vertical-align:top;-ms-interpolation-mode:bicubic}
 ins del{text-decoration:none}
-a:focus{outline:thin dotted}a{color:#363636;text-decoration:none}
-a:visited{text-decoration:none;color:#363636;}
-a,a:hover,a:active{outline:0;color:#363636;text-decoration:none}
+a,a:hover,a:active,a:visited,a:focus{color:#363636;text-decoration:none;outline:none;blr:expression(this.onFocus=this.blur());}
 .hidden{border:0!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);height:1px!important;margin:-1px;overflow:hidden;padding:0!important;position:absolute!important;width:1px}
 dd{margin:0}
 nav ul,nav ol{list-style:none}
