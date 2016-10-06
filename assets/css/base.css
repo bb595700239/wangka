@@ -55,6 +55,7 @@ h1,h2,h3,div,li,p,menu,button{font-size:100%;-webkit-tap-highlight-color:transpa
 .red{color: #f63c50 !important;}
 .green{color: #50be55 !important;}
 .iblue{color:#3a559f !important;}
+.gray{color: #a1a1a1 !important;}
 
 html{background:#eee;}
 body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640px;margin: 0 auto; color: #545454;line-height: 1.5; overflow-x: hidden;}/*em为相对单位,1em相当于16px(在顶层父元素上是这样)*/
@@ -73,14 +74,18 @@ body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640
 .gray-bg{background: #545454;}
 
 .item-box{background: #fff;}
+.padding-box{padding: 20px 10px; margin-top: 10px;}
 .fix-bottom{position:fixed;bottom:0;width:100%;height:35px;background-color:#f8f8f8;padding:8px 0;z-index:101;line-height: 18px;/*box-shadow: 0 -1px 5px rgba(0,0,0,.2);*/display: -webkit-box;max-width: 640px; border-top: 1px solid #dbdbdb;}
 .fix-bottom .fix-b{display:block;text-align:center;height:40px;color:#828282;font-size:11px;-webkit-box-flex: 1; width: 25%;}
 .fix-bottom .fix-b i{font-size: 23px; position: relative;}
 .fix-bottom .fix-b i.icon-home,.fix-bottom .fix-b i.icon-homefill{font-size: 20px;}
 .fix-bottom .active{color: #5e89fd;}
 
-.index .nav-list{border-bottom: 1px solid #eee;}
-.index .nav-list a{display: block;-webkit-box-flex:1;text-align: center;padding:10px 5px;color: #666;line-height: 34px; width: 100%; border-right: 1px solid #eee;}
+.index .nav-list{flex-wrap:wrap;}
+.index .nav-list a{display: block;-webkit-box-flex:1;text-align: center;color: #666;line-height: 34px; width: 33.333%; }
+.index .nav-list a .con{width: 100%;border-right: 1px solid #eee;border-bottom: 1px solid #eee; padding: 20px 0;}
+
+.index .nav-list a:nth-child(3n) .con{border-right: none;}
 .index .nav-list a:last-child{border: none;}
 .index .nav-list a i{display: block;width: 50px;height: 28px; font-size: 42px;margin: 0 auto 5px;}
 .swiper-container {position: relative;overflow: hidden;z-index: 1;width: 100%;}
@@ -151,6 +156,20 @@ img{width: 100%;}
 .wangkalist .weui_cell img{width: 60px; height: 60px; border-radius: 5px;}
 .wangkalist .weui_cell .weui_cell_bd{margin-left: 10px;overflow: hidden;}
 .wangkalist .weui_cell .weui_cell_bd p{ width: 100%;text-overflow: ellipsis;white-space: nowrap;overflow: hidden; }
-.wangkalist .weui_cell .weui_cell_bd p.p1{font-size: 18px;}
+.wangkalist .weui_cell .weui_cell_bd p.p1{font-size: 18px;margin-bottom: 6px;}
 .wangkalist .weui_cell .weui_cell_bd p.p2{color: #a1a1a1;}
 .wangkalist .weui_cell i{font-size: 30px; margin-right: 5px}
+
+
+.recharge .padding-box .flex-box{flex-wrap:wrap;}
+.recharge .padding-box li{width: 33.3%;-webkit-box-flex: 1; margin-bottom: 10px;}
+
+.recharge .padding-box li a{display: block; margin-right: 10px; border:1px solid #e4e4e4;text-align: center; border-radius: 5px;padding: 3px 0;overflow: hidden;}
+.recharge .padding-box li:nth-child(3n) a{margin-right: 0;}
+.recharge .padding-box .p1{font-size: 18px;}
+.recharge .padding-box .p2{color: #a1a1a1;font-size: 12px;}
+.recharge .info{text-align: center;padding: 10px;}
+.recharge .padding-box li.active a{color:#5e89fd;border-color: #5e89fd; }
+.recharge .padding-box li.active .p2{color:#5e89fd; }
+.treaty{margin-top: 50px;color: #a1a1a1;}
+.rechargetreaty .item-box{line-height: 2;}
