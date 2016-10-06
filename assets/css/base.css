@@ -80,7 +80,7 @@ body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640
 .fix-bottom .active{color: #5e89fd;}
 
 .index .nav-list{flex-wrap:wrap; background: #fff;}
-.index .nav-list a{display: block;-webkit-box-flex:1;text-align: center;color: #666;line-height: 34px; width: 33.333%; }
+.index .nav-list a{display: block;-webkit-box-flex:1;text-align: center;color: #666;line-height: 34px; width: 33.333%; border:none; }
 .index .nav-list a .con{width: 100%;border-right: 1px solid #eee;border-bottom: 1px solid #eee; padding: 20px 0;}
 
 .index .nav-list a:nth-child(3n) .con{border-right: none;}
