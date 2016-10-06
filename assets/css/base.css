@@ -113,6 +113,6 @@ body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640
 
 .my-account{position: relative; padding-bottom: 70px; background: #fff;}
 img{width: 100%;}
-.my-account .user-info{position: absolute; bottom: 40px; left: 20px;}
-.user-info .user-photo{width: 50px; height: 50px; border-radius: 50%;overflow: hidden;}
+.my-account .user-info{position: absolute; bottom: 35px; left: 20px;}
+.user-info .user-photo{width: 60px; height: 60px; border-radius: 50%;overflow: hidden;}
 .user-info .name{position: relative;top: 7px;margin-left: 10px; display: block;}
