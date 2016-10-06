@@ -27,41 +27,21 @@
 </head>
 
 <body>
-	<div class="fixed-bottom usercenter">
-		<div class="my-account clearfix">
-            <img class="user-bg" src="assets/images/banner.jpg" >
-            <div class="user-info flex-box">
-                <div class="user-photo"><img src="assets/images/user.jpg" alt="user"></div>
-                <span class="name">Joubn</span>
+	<div class="">
+        <div class="weui_cells_title text-center">仔细填写报名信息，才能顺利参赛哦！</div>
+		<div class="weui_cells">
+            <div class="weui_cell">
+                <div class="weui_cell_hd">姓名</div>
+                <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入姓名" onblur="rule.empty($(this),'姓名不能为空')" data-group-state="false"></div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd">手机号</div>
+                <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入手机号" onblur="rule.phone($(this))" data-group-state="false"></div>
             </div>
         </div>
-        <div class="weui_cells">
-            <a class="weui_cell" href="#">
-                <i class="icon-jifen l-icon purple"></i>
-                <div class="weui_cell_bd weui_cell_primary">
-                我的积分
-                </div>
-                <span class="r-con active">您当前拥有300积分</span>
-            </a>
-        </div>
-        <div class="weui_cells">
-            <a class="weui_cell" href="#">
-                <i class="icon-vipcard l-icon red"></i>
-                <div class="weui_cell_bd weui_cell_primary">
-                绑卡
-                </div>
-                <span class="r-con active">已绑定卡号：900149889</span>
-            </a>
-        </div>
-        <div class="fix-bottom">
-            <a href="index.html" class="fix-b">
-                <i class="icon-home"></i>
-                <p>首页</p>
-            </a>
-            <a href="userCenter.html" class="fix-b active">
-                <i class="icon-peoplefill"></i>
-                <p>我的</p>
-            </a>
+        <div class="weui_cells_title iblue">我们不会在任何地方泄漏您的个人信息，仅用于核实参赛人员信息。</div>
+        <div class="surebtn">
+            <div class="btn">填好了，马上报名</div>
         </div>
 	</div>
 </body>

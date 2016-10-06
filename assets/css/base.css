@@ -21,7 +21,7 @@ img{vertical-align:top;-ms-interpolation-mode:bicubic}
 ins del{text-decoration:none}
 a:focus{outline:thin dotted}a{color:#363636;text-decoration:none}
 a:visited{text-decoration:none;color:#363636;}
-a,a:hover,a:active{outline:0;color:#5e89fd;text-decoration:none}
+a,a:hover,a:active{outline:0;color:#363636;text-decoration:none}
 .hidden{border:0!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);height:1px!important;margin:-1px;overflow:hidden;padding:0!important;position:absolute!important;width:1px}
 dd{margin:0}
 nav ul,nav ol{list-style:none}
@@ -48,16 +48,26 @@ h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}
 h1,h2,h3,div,li,p,menu,button{font-size:100%;-webkit-tap-highlight-color:transparent}
 .flex-box{display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-align: center;-webkit-align-items: center; align-items: center;}
 .boxsizing{-moz-box-sizing: border-box; /*Firefox3.5+*/-webkit-box-sizing: border-box; /*Safari3.2+*/-o-box-sizing: border-box; /*Opera9.6*/-ms-box-sizing: border-box; /*IE8*/box-sizing: border-box;}
-.blue{color: #5e89fd;}
-.orange{color:#ff7c4e;}
-.purple{color: #948fff;}
-.yellow{color: #ffaa00;}
-.red{color: #f63c50;}
-.green{color: #50be55;}
+.blue{color: #5e89fd !important;}
+.orange{color:#ff7c4e !important;}
+.purple{color: #948fff !important;}
+.yellow{color: #ffaa00 !important;}
+.red{color: #f63c50 !important;}
+.green{color: #50be55 !important;}
 .iblue{color:#3a559f !important;}
 
 html{background:#eee;}
 body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640px;margin: 0 auto; color: #545454;line-height: 1.5; overflow-x: hidden;}/*em为相对单位,1em相当于16px(在顶层父元素上是这样)*/
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.font-size10{font-size: 10px;}
+.font-size12{font-size: 12px;}
+.font-size14{font-size: 14px;}
+.font-size16{font-size: 16px;}
+.font-size18{font-size: 18px;}
+.font-size20{font-size: 20px;}
+.paddingtb0{padding-top: 0 !important;padding-bottom: 0 !important;}
 .fixed-bottom{margin-bottom: 52px}
 .white-bg{background: #fff;}
 
@@ -90,14 +100,17 @@ body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640
 .weui_cells .weui_cell:first-child{border-top: 1px solid #eeeeee;}
 .weui_cell{padding: 8px 10px;position: relative;display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-align: center;-webkit-align-items: center;align-items: center; border-bottom: 1px solid #eeeeee;min-height: 35px;}
 .weui_cell_hd{display: block;width: 90px;word-wrap: break-word;word-break: break-all;color: #545454;}
-.weui_cell_primary {-webkit-box-flex: 1;-webkit-flex: 1; flex: 1;color: #333;font-size: 15px;}
-.weui_input {width: 100%;border: 0;outline: 0;-webkit-appearance: none;background-color: transparent;font-size: inherit;color: inherit;height: 1.41176471em;line-height: 1.41176471; color: #333;text-align: right; margin: 0;padding: 0;}
+.weui_cell_primary {/*color: #333;*/font-size: 15px;}
+.weui_cell_primary input{text-align: right;}
+.weui_input {width: 100%;border: 0;outline: 0;-webkit-appearance: none;background-color: transparent;font-size: inherit;color: inherit;height: 1.41176471em;line-height: 1.41176471; color: #333; margin: 0;padding: 0;}
 
 .weui_cells_title {margin-top: 10px;margin-bottom: 10px;padding-left: 15px;padding-right: 15px;color: #b5b5b5;font-size: 14px;}
 .weui_select {-webkit-appearance: none;border: 0;outline: 0;background-color: transparent;width: 100%;font-size: inherit;    height: 1.41176471em;
     line-height: 1.41176471;position: relative;z-index: 1;position: relative;}
 .weui_cell .l-icon{font-size: 20px; margin-right: 5px; }
 .weui_cell .r-con{position: relative;color: #999;font-size: 13px;height: 18px;display: block;line-height: 18px;}
+.weui_cell .close{color: #a1a1a1;font-size:22px;}
+.weui_cell_bd{-webkit-box-flex: 1;-webkit-flex: 1; flex: 1;}
 .weui_cell_bd~.r-con.active{padding-right: 20px;}
 .weui_select~.r-con.active:after,.weui_cell_bd~.r-con.active:after{content: "\e614";font-family: "iconfont";  position: absolute;top: 0px;right: 0px;font-size: 18px;color: #888; }
 .weui_cell_bd~.r-con.active:after{content: "\e633"}
@@ -116,3 +129,15 @@ img{width: 100%;}
 .my-account .user-info{position: absolute; bottom: 35px; left: 20px;}
 .user-info .user-photo{width: 60px; height: 60px; border-radius: 50%;overflow: hidden;}
 .user-info .name{position: relative;top: 7px;margin-left: 10px; display: block;}
+.gamecenter .rule{padding:10px;}
+.gamecenter .rule .tit{margin-top: 3px;margin-bottom: 10px;}
+.gamecenter .rule .con{color: #a1a1a1;line-height: 1.8;}
+.gamecenter .rule .con p{text-indent: 2em;}
+.fix-bottom-btn{background: #5e89fd; border-top: none; text-align: center;color: #fff !important;display: block;line-height:35px;font-size: 18px;}
+.ui-qiandao .join{width: 80px; height: 80px; border-radius: 50%;color: #fff;line-height: 80px;margin: 0 auto; display: block;}
+.ui-qiandao .onejoin,.ui-qiandao .teamjoin{margin-top: 20px; margin-bottom: 20px;}
+.ui-qiandao .join i{font-size:40px;}
+.ui-qiandao .onejoin .join{background: #5e89fd;}
+.ui-qiandao .teamjoin .join{background: #ff7c4e;}
+.gamesteamjoin .btn-add{margin: 20px 10px 10px 10px;background: #fff; color:#5e89fd; border:1px dotted #5e89fd;vertical-align: top;}
+.gamesteamjoin .btn-add i{font-size: 20px; margin-right: 5px;position: relative;top: 2px;}
