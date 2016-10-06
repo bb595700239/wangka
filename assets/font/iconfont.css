@@ -159,3 +159,4 @@ a [class^="icon-"],a [class*=" icon-"]{display:inline;}
 .icon-haoyou:before { content: "\e68e"; }
 .icon-liwu:before { content: "\e68f"; }
 .icon-saishi:before { content: "\e690"; }
+.icon-jifen:before { content: "\e691"; }

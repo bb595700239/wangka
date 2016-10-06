@@ -57,7 +57,7 @@ h1,h2,h3,div,li,p,menu,button{font-size:100%;-webkit-tap-highlight-color:transpa
 .iblue{color:#3a559f !important;}
 
 html{background:#eee;}
-body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640px;margin: 0 auto; color: #535353;line-height: 1.5; overflow-x: hidden;}/*em为相对单位,1em相当于16px(在顶层父元素上是这样)*/
+body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640px;margin: 0 auto; color: #545454;line-height: 1.5; overflow-x: hidden;}/*em为相对单位,1em相当于16px(在顶层父元素上是这样)*/
 .fixed-bottom{margin-bottom: 52px}
 .white-bg{background: #fff;}
 
@@ -96,11 +96,11 @@ body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640
 .weui_cells_title {margin-top: 10px;margin-bottom: 10px;padding-left: 15px;padding-right: 15px;color: #b5b5b5;font-size: 14px;}
 .weui_select {-webkit-appearance: none;border: 0;outline: 0;background-color: transparent;width: 100%;font-size: inherit;    height: 1.41176471em;
     line-height: 1.41176471;position: relative;z-index: 1;position: relative;}
-.weui_cell .l-icon{font-size: 20px; margin-right: 5px; color: #fd4652;}
+.weui_cell .l-icon{font-size: 20px; margin-right: 5px; }
 .weui_cell .r-con{position: relative;color: #999;font-size: 13px;height: 18px;display: block;line-height: 18px;}
 .weui_cell_bd~.r-con.active{padding-right: 20px;}
-.weui_select~.r-con.active:after,.weui_cell_bd~.r-con.active:after{content: "\e627";font-family: "iconfont";  position: absolute;top: 0px;right: 0px;font-size: 18px;color: #777; }
-.weui_cell_bd~.r-con.active:after{content: "\e650"}
+.weui_select~.r-con.active:after,.weui_cell_bd~.r-con.active:after{content: "\e614";font-family: "iconfont";  position: absolute;top: 0px;right: 0px;font-size: 18px;color: #888; }
+.weui_cell_bd~.r-con.active:after{content: "\e633"}
 #getcode .btn-send{color:#5e89fd;border-left: 1px solid #eeeeee;    display: block;padding: 7px 0; width: 130px;text-align: right;}
 #getcode .weui_input{text-align: left;}
 .surebtn{margin-top: 20px;}
@@ -110,3 +110,9 @@ body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640
 .btn-def{border: 1px solid #67b6fb;border-radius: 4px;height: 31px; line-height: 31px; color:#67b6fb; padding: 0 20px; background-color: #fff;    transition: all 0.35s ease-out 0s;
     -moz-transition: all 0.35s ease-out 0s; }
 .btn-disabled{border:1px solid #ccc;background:#ccc !important; color:#999 !important;}
+
+.my-account{position: relative; padding-bottom: 70px; background: #fff;}
+img{width: 100%;}
+.my-account .user-info{position: absolute; bottom: 40px; left: 20px;}
+.user-info .user-photo{width: 50px; height: 50px; border-radius: 50%;overflow: hidden;}
+.user-info .name{position: relative;top: 7px;margin-left: 10px; display: block;}
