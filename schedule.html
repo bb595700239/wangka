@@ -46,12 +46,12 @@
                     </div>
                 </div>
             </div>
-            <div class="weui_cell">
+            <label class="weui_cell" for="date">
                 <div class="weui_cell_hd">入座时间</div>
                 <div class="weui_cell_bd weui_cell_primary">
                     <input class="weui_input" type="date" id="date" onblur="rule.empty($(this),'请选择入座时间')" data-group-state="false">
                 </div>
-            </div>
+            </label>
         </div>
         <div class="item-box padding-box">
             <div class="tit">可选座位类型</div>
@@ -73,7 +73,7 @@
             <div class="btn">立即订座</small></div>
         </div>
         <script type="text/javascript">
-            $('#date').val(new Date().format('yyyy-MM-dd'))
+            $('#date').val(new Date().format('yyyy-MM-dd'));
             var setAmount = {
                 min:1,
                 max:Infinity,
