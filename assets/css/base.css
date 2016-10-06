@@ -177,65 +177,13 @@ img{width: 100%;}
 .chose-quantity{display: inline-block;vertical-align: middle;-webkit-border-radius: 3px;border-radius: 3px;letter-spacing: 0;height: 28px;line-height: 28px; background-color: #fff; position: relative;color:#5e89fd;}
 .chose-quantity .minus,.chose-quantity .add{font-style: normal;font-size: 16px;font-weight: 400;border: 0;display: inline-block;width: 28px;height: 100%;-webkit-user-select: none;-ms-user-select: none;background-color: #fff;text-align: center; border: 1px solid #5e89fd; border-radius: 50%;}
 .chose-quantity .exc-number{width:30px;-webkit-box-sizing: border-box;box-sizing: border-box;padding: 0 5px;border: 0;-webkit-border-radius: 0;border-radius: 0;font-weight: 700;color: #3d4245;background-color: #fff;text-align: center; line-height: 20px;font-size: 14px; margin: 0;  }
-.weui-cell__ft {
-    text-align: right;
-    color: #999999;
-}
-.weui-switch {
-    -webkit-appearance: none;
-    appearance: none;
-    position: relative;
-    width: 67px;
-    height: 32px;
-    border: 1px solid #DFDFDF;
-    outline: 0;
-    border-radius: 16px;
-    box-sizing: border-box;
-    background-color: #DFDFDF;
-    -webkit-transition: background-color 0.1s, border 0.1s;
-    transition: background-color 0.1s, border 0.1s;
-}
-.weui-switch:checked {
-    border-color: #5e89fd;
-    background-color: #5e89fd;
-}
-.weui-switch:before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 65px;
-    height: 30px;
-    border-radius: 15px;
-    background-color: #FDFDFD;
-    -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
-    transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
-    transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
-    transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1), -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
-}
-.weui-switch:checked:before {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-}
-.weui-switch:after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    background-color: #FFFFFF;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-    -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
-    transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
-    transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
-    transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35), -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
-}
-.weui-switch:checked:after {
-    -webkit-transform: translateX(35px);
-    transform: translateX(35px);
-}
+.weui-cell__ft {text-align: right; color: #999999;}
+.weui-switch { -webkit-appearance: none; appearance: none;position: relative;width: 65px;height: 30px;border: 1px solid #DFDFDF; outline: 0;border-radius: 16px;box-sizing: border-box;background-color: #DFDFDF;-webkit-transition: background-color 0.1s, border 0.1s;transition: background-color 0.1s, border 0.1s;}
+.weui-switch:checked {border-color: #5e89fd;background-color: #5e89fd;}
+.weui-switch:before {content: " ";position: absolute;top: 0;left: 0;width: 63px;height: 28px;border-radius: 15px;background-color: #FDFDFD;-webkit-transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1), -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);}
+.weui-switch:checked:before {-webkit-transform: scale(0);transform: scale(0);}
+.weui-switch:after {content: " ";position: absolute;top: 0;left: 0;width: 28px;height: 28px;border-radius: 15px;background-color: #FFFFFF;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);-webkit-transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35), -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);}
+.weui-switch:checked:after {-webkit-transform: translateX(35px);transform: translateX(35px);}
 .schedule .padding-box .tit{margin-bottom: 10px;}
 .schedule .padding-box label{ margin-bottom: 10px;}
 .schedule .padding-box label a{  color: #a1a1a1;height: 40px; line-height: 40px;overflow: hidden;border-radius: 5px;padding: 0 10px;border:1px solid #e4e4e4;display: block;width: 100%;position: relative;padding-right: 45px;}
