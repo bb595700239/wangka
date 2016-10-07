@@ -119,9 +119,9 @@ window.onload=function(){
 };
 
 function drawRouletteWheel() {    
-  var canvas = document.getElementById("wheelcanvas");    
-  if (canvas.getContext) {
-  	alert(1)
+  var canvas = document.getElementById("wheelcanvas");  
+  alert(canvas.getContext)  
+
 	  //根据奖品个数计算圆周角度
 	  var arc = Math.PI / (turnplate.restaraunts.length/2);
 	  var ctx = canvas.getContext("2d");
@@ -184,6 +184,6 @@ function drawRouletteWheel() {
 		  ctx.restore();
 		  //----绘制奖品结束----
 	  }     
-  } 
+
 
 }
