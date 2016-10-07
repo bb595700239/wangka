@@ -28,34 +28,36 @@
 
 <body>
 	<div class="bindCard">
-		<div class="weui_cells">
-            <div class="weui_cell">
-                <div class="weui_cell_hd">昵称</div>
-                <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入昵称" onblur="rule.empty($(this),'昵称不能为空')" data-group-state="false"></div>
-            </div>
-            <div class="weui_cell">
-                <div class="weui_cell_hd">身份证号</div>
-                <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入身份证号" onblur="rule.idcard($(this))" data-group-state="false"></div>
-            </div>
-            <div class="weui_cell">
-                <div class="weui_cell_hd">卡号</div>
-                <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入卡号" onblur="rule.bankcard($(this))" data-group-state="false"></div>
-            </div>
-            <div class="weui_cell">
-                <div class="weui_cell_hd">手机号</div>
-                <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入手机号" onblur="rule.phone($(this))" data-group-state="false"></div>
-            </div>
-            <div class="weui_cell" id="getcode">
-                <div class="weui_cell_bd weui_cell_primary">
-                    <input class="weui_input" type="text" placeholder="请输验证码" data-group-state="false">
+        <form class="g-form" method="post" data-posturl="#">
+    		<div class="weui_cells">
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">昵称</div>
+                    <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入昵称" onblur="rule.empty($(this),'昵称不能为空')" data-group-state="false"></div>
                 </div>
-                <a href="#" class="btn-send" data-url="sendMsgNew.action?type=1">点击获取验证码</a>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">身份证号</div>
+                    <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入身份证号" onblur="rule.idcard($(this))" data-group-state="false"></div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">卡号</div>
+                    <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入卡号" onblur="rule.bankcard($(this))" data-group-state="false"></div>
+                </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">手机号</div>
+                    <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" id="phone" type="text" placeholder="请输入手机号" onblur="rule.phone($('#phone'))" data-group-state="false"></div>
+                </div>
+                <div class="weui_cell" id="getcode">
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" type="text" onblur="rule.custom($(this),'/^[0-9]{6}$/','短信验证码为6位数字');" placeholder="请输验证码" data-group-state="false">
+                    </div>
+                    <a class="btn-send" data-url="sendMsgNew.action?type=1">点击获取验证码</a>
+                </div>
             </div>
-        </div>
-        <div class="weui_cells_title iblue">我们不会在任何地方泄漏您的个人信息，仅用于校验会员身份信息。</div>
-        <div class="surebtn">
-            <div class="btn">完成绑卡</div>
-        </div>
+            <div class="weui_cells_title iblue">我们不会在任何地方泄漏您的个人信息，仅用于校验会员身份信息。</div>
+            <div class="surebtn">
+                <div class="btn">完成绑卡</div>
+            </div>
+        </form>
 	</div>
 </body>
 

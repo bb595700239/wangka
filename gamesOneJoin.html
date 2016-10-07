@@ -28,21 +28,23 @@
 
 <body>
 	<div class="">
-        <div class="weui_cells_title text-center">仔细填写报名信息，才能顺利参赛哦！</div>
-		<div class="weui_cells">
-            <div class="weui_cell">
-                <div class="weui_cell_hd">姓名</div>
-                <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入姓名" onblur="rule.empty($(this),'姓名不能为空')" data-group-state="false"></div>
-            </div>
-            <div class="weui_cell">
-                <div class="weui_cell_hd">手机号</div>
-                <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入手机号" onblur="rule.phone($(this))" data-group-state="false"></div>
-            </div>
-        </div>
-        <div class="weui_cells_title iblue">我们不会在任何地方泄漏您的个人信息，仅用于核实参赛人员信息。</div>
-        <div class="surebtn">
-            <div class="btn">填好了，马上报名</div>
-        </div>
+		<form class="g-form" method="post" data-posturl="#">
+	        <div class="weui_cells_title text-center">仔细填写报名信息，才能顺利参赛哦！</div>
+			<div class="weui_cells">
+	            <div class="weui_cell">
+	                <div class="weui_cell_hd">姓名</div>
+	                <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入姓名" onblur="rule.empty($(this),'姓名不能为空')" data-group-state="false"></div>
+	            </div>
+	            <div class="weui_cell">
+	                <div class="weui_cell_hd">手机号</div>
+	                <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入手机号" onblur="rule.phone($(this))" data-group-state="false"></div>
+	            </div>
+	        </div>
+	        <div class="weui_cells_title iblue">我们不会在任何地方泄漏您的个人信息，仅用于核实参赛人员信息。</div>
+	        <div class="surebtn">
+	            <div class="btn">填好了，马上报名</div>
+	        </div>
+        </form>
 	</div>
 </body>
 

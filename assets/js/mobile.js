@@ -76,11 +76,8 @@ $(function(){
                 return
             }
         }     
-    }},'a.btn'); 
+    }},'.btn'); 
 
-    $('#getcodeJs img').click(function(){
-        this.src=url+'/code?t='+new Date().getTime()
-    }).trigger('click');
 })
 
 
@@ -97,36 +94,6 @@ $(function(){
                     arg.action()
                 }
             }); 
-        },
-        $.outputmoney=function(number){
-            if(number==null){return '-';}
-            function outputdollars(number){
-                if (number.length <= 3){
-                    return (number == '' ? '0' : number);
-                }
-                else {
-                    var mod = number.length % 3;
-                    var output = (mod == 0 ? '' : (number.substring(0, mod)));
-                    for (i = 0; i < Math.floor(number.length / 3); i++) {
-                        if ((mod == 0) && (i == 0))
-                            output += number.substring(mod + 3 * i, mod + 3 * i + 3);
-                        else
-                            output += ',' + number.substring(mod + 3 * i, mod + 3 * i + 3);
-                    }
-                    return (output);
-                }
-            }
-            function outputcents(amount){
-                amount = Math.round(((amount) - Math.floor(amount)) * 100);
-                return (amount < 10 ? '.0' + amount : '.' + amount);
-            }
-            number = String(number).replace(/\,/g, "");
-            if(isNaN(number) || number == "")return "";
-            number = Math.round(number * 100) / 100;
-            if (number < 0)
-                return '-' + outputdollars(Math.floor(Math.abs(number) - 0) + '') + outputcents(Math.abs(number) - 0);
-            else
-                return outputdollars(Math.floor(number - 0) + '') + outputcents(number - 0);        
         }
 
 })(Zepto);
@@ -149,7 +116,7 @@ var  rule={
         };
         $.ajax({
             type: "POST",
-            url:url+form.data('posturl'),
+            url:form.data('posturl'),
             data:form.serialize(),
             beforeSend: function () {formsubmit.addClass('btn-disabled').html('提交中...');},
             success: function(data) {
@@ -164,7 +131,7 @@ var  rule={
                     }
                     window.location.href=options.gotourl;
                 }else{
-                    var mess;
+                    var mess="请求失败";
                     if(data.message=='code'){
                         mess='图片验证码有误';
                         $('#getcodeJs img').trigger('click');
@@ -172,9 +139,6 @@ var  rule={
                         mess='短信验证码有误';
                     }else if(data.message=='paypwd'){
                         mess='交易密码错误';
-                    }else{
-						mess=data.message;
-                        $('#getcodeJs img').trigger('click');
                     }
                     $.alert(mess);
                 }
@@ -317,7 +281,7 @@ var getcode={//获取手机验证码
             }
             this.time(o); 
             $.ajax({
-                url:url+o.data('url')+code,
+                url:o.data('url')+code,
                 type:'post',
                 dataType: "json",
                 data:{phone:phone},
@@ -356,7 +320,7 @@ $(function(){
         if(!$(this).hasClass('btn-disabled')){
             getcode.ajax($(this))
         }
-    }},'a.btn-def');
+    }},'.btn-send');
 })
 
 

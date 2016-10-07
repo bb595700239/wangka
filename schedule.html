@@ -28,13 +28,14 @@
 
 <body>
 	<div class="fixed-bottom schedule">
+        <form class="g-form" method="post" data-posturl="#">
 		<div class="weui_cells">
             <div class="weui_cell">
                 <div class="weui_cell_hd">座位数</div>
                 <div class="weui_cell_bd weui_cell_primary text-right">
                     <div class="chose-quantity">
                         <span onclick="setAmount.reduce('#exc-number')" class="minus"><i class="icon-move"></i></span>
-                        <input type="text" value="1" id="exc-number" class="exc-number" readonly>
+                        <input type="text" value="1" name="num" id="exc-number" class="exc-number" readonly>
                         <span onclick="setAmount.add('#exc-number')" class="add"><i class="icon-add"></i></span>
                     </div>
                 </div>
@@ -43,7 +44,7 @@
                 <div class="weui_cell_hd">连座</div>
                 <div class="weui_cell_bd weui_cell_primary text-right">
                     <div class="weui-cell__ft">
-                        <input class="weui-switch" type="checkbox">
+                        <input class="weui-switch" name="lian" type="checkbox">
                     </div>
                 </div>
             </div>
@@ -57,7 +58,7 @@
         <div class="item-box padding-box">
             <div class="tit">可选座位类型</div>
             <label data-gold="30" for="x1" class="flex-box needsclick">
-                <input type="radio" class="weui-check" name="radio2" id="x1">
+                <input type="radio" class="weui-check" name="radio2" id="x1" checked="checked">
                 <a class="needsclick"><div class="name needsclick">大厅座位</div> <i class="icon-roundcheckfill"></i></a>
             </label>
             <label data-gold="30" for="x2" class="flex-box needsclick">
@@ -73,6 +74,7 @@
         <div class="surebtn">
             <div class="btn">立即订座</small></div>
         </div>
+        </form>
         <script type="text/javascript">
             $('#date').val(new Date().format('yyyy-MM-dd'));
             var setAmount = {
