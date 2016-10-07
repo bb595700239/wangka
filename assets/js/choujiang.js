@@ -121,6 +121,7 @@ window.onload=function(){
 function drawRouletteWheel() {    
   var canvas = document.getElementById("wheelcanvas");    
   if (canvas.getContext) {
+  	alert(1)
 	  //根据奖品个数计算圆周角度
 	  var arc = Math.PI / (turnplate.restaraunts.length/2);
 	  var ctx = canvas.getContext("2d");
@@ -184,16 +185,5 @@ function drawRouletteWheel() {
 		  //----绘制奖品结束----
 	  }     
   } 
-  
 
-    // 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器
-    /*var useragent = navigator.userAgent;
-    if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
-        // 这里警告框会阻塞当前页面继续加载
-        alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');
-        // 以下代码是用javascript强行关闭当前页面
-        var opened = window.open('about:blank', '_self');
-        opened.opener = null;
-        opened.close();
-    }*/
 }
