@@ -79,10 +79,9 @@
         <script>
         	$(function(){
         		$('#gamestart').click(function(){
-				$.confirm(`<div class="tit">选择您的报名类型</div>
-					<div class="onejoin"><a href="gamesOneJoin.html" class="join"><i class="icon-people"></i></a><p class="blue">单人参赛</p></div>
-					<div class="teamjoin"><a href="gamesTeamJoin.html" class="join"><i class="icon-friend"></i></a><p class="orange">战队参赛</p></div>
-					`,[],function(type){
+				$.confirm('<div class="tit">选择您的报名类型</div>'+
+					'<div class="onejoin"><a href="gamesOneJoin.html" class="join"><i class="icon-people"></i></a><p class="blue">单人参赛</p></div>'+
+					'<div class="teamjoin"><a href="gamesTeamJoin.html" class="join"><i class="icon-friend"></i></a><p class="orange">战队参赛</p></div>',[],function(type){
 				    if(type=="yes"){
 				    }else if(type=="no"){
 				        this.hide();  

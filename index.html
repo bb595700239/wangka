@@ -85,11 +85,10 @@
 				});
     		})
     		$('#signIn').click(function(){
-				$.confirm(`<div class="tit orange">恭喜获得5积分，明天继续加油</div>
-					<div class="con">签到规则<br/>第1天获5积分，第2天获10积分，<br/>第3天及以后获20积分；中断重新开始。</div>
-					<div class="go-game"><i class="icon-choujiang"></i></div>
-					<div class="info">花积分，抽奖赢好礼，点击参与</div>
-					`,[],null,{className:'ui-qiandao showClose ui-alert',width:'270px'});
+				$.confirm('<div class="tit orange">恭喜获得5积分，明天继续加油</div>'+
+					'<div class="con">签到规则<br/>第1天获5积分，第2天获10积分，<br/>第3天及以后获20积分；中断重新开始。</div>'+
+					'<div class="go-game"><i class="icon-choujiang"></i></div>'+
+					'<div class="info">花积分，抽奖赢好礼，点击参与</div>',[],null,{className:'ui-qiandao showClose ui-alert',width:'270px'});
 				$.alert('今日已签到,明天再接再厉')
 			})
     	})

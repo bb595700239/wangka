@@ -81,23 +81,23 @@
         	$(function(){
         		$('.btn-add').click(function(){
         			if($('.weui_cells').length>6){$.alert('每队最多可有5名队员');return;}
-        			$('#gamerlist').append(`<div class="weui_cells">
-	        	<div class="weui_cell paddingtb0 blue">
-	                <i class="icon-peoplefill l-icon"></i>
-	                <div class="weui_cell_bd">
-	                队员信息
-	                </div>
-	                <i class="icon-roundclosefill close"></i>
-	            </div>
-	            <div class="weui_cell">
-	                <div class="weui_cell_hd">姓名</div>
-	                <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入姓名" onblur="rule.empty($(this),'姓名不能为空')" data-group-state="false"></div>
-	            </div>
-	            <div class="weui_cell">
-	                <div class="weui_cell_hd">手机号</div>
-	                <div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入手机号" onblur="rule.phone($(this))" data-group-state="false"></div>
-	            </div>
-	        </div>`)
+        			$('#gamerlist').append('<div class="weui_cells">'+
+	        	'<div class="weui_cell paddingtb0 blue">'+
+	                '<i class="icon-peoplefill l-icon"></i>'+
+	                '<div class="weui_cell_bd">'+
+	                '队员信息'+
+	                '</div>'+
+	                '<i class="icon-roundclosefill close"></i>'+
+	            '</div>'+
+	            '<div class="weui_cell">'+
+	                '<div class="weui_cell_hd">姓名</div>'+
+	                '<div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入姓名" onblur="rule.empty($(this),\'姓名不能为空\')" data-group-state="false"></div>'+
+	            '</div>'+
+	            '<div class="weui_cell">'+
+	                '<div class="weui_cell_hd">手机号</div>'+
+	                '<div class="weui_cell_bd weui_cell_primary"><input class="weui_input" type="text" placeholder="请输入手机号" onblur="rule.phone($(this))" data-group-state="false"></div>'+
+	            '</div>'+
+	        '</div>')
         		})
         	})
         	$('#gamerlist').on({click:function(){

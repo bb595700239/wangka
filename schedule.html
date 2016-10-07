@@ -57,18 +57,18 @@
         </div>
         <div class="item-box padding-box">
             <div class="tit">可选座位类型</div>
-            <label data-gold="30" for="x1" class="flex-box needsclick">
+            <div data-gold="30" for="x1" class="flex-box list">
                 <input type="radio" class="weui-check" name="radio2" id="x1" checked="checked">
-                <a class="needsclick"><div class="name needsclick">大厅座位</div> <i class="icon-roundcheckfill"></i></a>
-            </label>
-            <label data-gold="30" for="x2" class="flex-box needsclick">
+                <a><div class="name">大厅座位</div> <i class="icon-roundcheckfill"></i></a>
+            </div>
+            <div data-gold="30" for="x2" class="flex-box list">
                 <input type="radio" class="weui-check" name="radio2" id="x2">
-                <a class="needsclick"><div class="name needsclick">轻奢卡座</div> <i class="icon-roundcheckfill"></i></a>
-            </label>
-            <label data-gold="30" for="x3" class="flex-box needsclick">
+                <a><div class="name">轻奢卡座</div> <i class="icon-roundcheckfill"></i></a>
+            </div>
+            <div data-gold="30" for="x3" class="flex-box list">
                 <input type="radio" class="weui-check" name="radio2" id="x3">
-                <a class="needsclick"><div class="name needsclick">豪华包间</div> <i class="icon-roundcheckfill"></i></a>
-            </label>
+                <a><div class="name">豪华包间</div> <i class="icon-roundcheckfill"></i></a>
+            </div>
         </div>
 
         <div class="surebtn">
@@ -76,6 +76,12 @@
         </div>
         </form>
         <script type="text/javascript">
+            $(function(){
+              $('.list').click(function(){
+                    $('.weui-check').removeAttr('checked')
+                    $(this).find('input').attr('checked','checked')
+              }) 
+            })
             $('#date').val(new Date().format('yyyy-MM-dd'));
             var setAmount = {
                 min:1,
