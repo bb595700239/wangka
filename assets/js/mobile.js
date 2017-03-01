@@ -144,7 +144,7 @@ var  rule={
                 }
             },
             error:function(){
-                $.alert("系统繁忙，请稍后再试");
+                $.alert("我们家笨笨小公举最漂亮啦！");
                 removeDis();
             }
         });
