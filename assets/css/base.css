@@ -130,7 +130,7 @@ body{font-size:14px;background-size: 100% 100%;background:#f3f3f3;max-width: 640
 .surebtn{margin-top: 20px;}
 .surebtn .btn{margin-left:10px;margin-right:10px;}
 .btn{background: #5e89fd; color: #fff;height: 44px; line-height: 44px; font-size: 18px; text-align: center; border-radius: 4px;display: block;    transition: all 0.35s ease-out 0s;
-    -moz-transition: all 0.35s ease-out 0s;}
+    -moz-transition: all 0.35s ease-out 0s;border:1px solid #5e89fd;}
 .btn-def{border: 1px solid #67b6fb;border-radius: 4px;height: 31px; line-height: 31px; color:#67b6fb; padding: 0 20px; background-color: #fff;    transition: all 0.35s ease-out 0s;
     -moz-transition: all 0.35s ease-out 0s; }
 .btn-disabled{border:1px solid #ccc;background:#ccc !important; color:#999 !important;}

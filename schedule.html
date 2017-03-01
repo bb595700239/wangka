@@ -51,9 +51,21 @@
             <label class="weui_cell" for="date">
                 <div class="weui_cell_hd">入座时间</div>
                 <div class="weui_cell_bd weui_cell_primary text-right">
-                    <input class="weui_input needsclick" type="date" id="date" onblur="rule.empty($(this),'请选择入座时间')" data-group-state="false">
+                    <input class="weui_input needsclick" type="datetime" id="date" onblur="rule.empty($(this),'请选择入座时间')" data-group-state="false">
                 </div>
             </label>
+            <div class="weui_cell">
+                <div class="weui_cell_hd">连座</div>
+                <div class="weui_cell_bd weui_cell_primary text-right">
+                    <div class="weui-cell__ft">
+                        <select name="" onblur="rule.empty($(this),'请选择连锁网吧')" data-group-state="false">
+                            <option value="">--请选择--</option>
+                            <option value="1">连锁网吧一</option>
+                            <option value="2">连锁网吧二</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="item-box padding-box">
             <div class="tit">可选座位类型</div>
